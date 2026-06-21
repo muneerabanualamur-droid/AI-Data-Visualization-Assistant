@@ -1,0 +1,6 @@
+flask
+pandas
+plotly
+google-genai
+python-dotenv
+openpyxl
