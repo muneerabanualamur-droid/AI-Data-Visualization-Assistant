@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Dataset</title>
+</head>
+<body>
+
+<h2>Upload CSV or Excel File</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+    <input type="file" name="dataset" required>
+
+    <br><br>
+    <label>Select Chart Type:</label>
+
+<select name="chart_type">
+    <option value="bar">Bar Chart</option>
+    <option value="line">Line Chart</option>
+    <option value="pie">Pie Chart</option>
+    <option value="scatter">Scatter Plot</option>
+</select>
+
+<br><br>
+    <button type="submit">Upload</button>
+
+</form>
+
+</body>
+</html>
