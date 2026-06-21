@@ -4,3 +4,4 @@ plotly
 google-genai
 python-dotenv
 openpyxl
+gunicorn
