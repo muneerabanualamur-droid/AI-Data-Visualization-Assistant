@@ -11,8 +11,9 @@ app = Flask(__name__)
 
 # ---------------- CONFIG ----------------
 UPLOAD_FOLDER = "uploads"
-app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
+app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 # ---------------- GEMINI CLIENT ----------------
 client = genai.Client(
     api_key=os.getenv("GEMINI_API_KEY")
